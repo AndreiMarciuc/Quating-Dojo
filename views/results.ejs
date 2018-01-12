@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html style="margin:20px;">
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	
+	</script>
+	
+	
+</head>
+<body>
+	<h1>Here are the awesome quotes!</h1>
+	<% for (var i in quote) { %>
+	<h3> Quote :</h3><p style="margin-left: 50px;">- <%= quote[i].quote%></p>	
+		<h3>Name:</h3>    <p style="margin-left: 50px;">- <%= quote[i].name %> Created at: <%= moment(quote[i].createdAt).fromNow(quote[i].createdAt) %> ago</p><hr>
+	<% } %>	
+</body>
+</html>
